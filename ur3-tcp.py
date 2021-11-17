@@ -67,7 +67,7 @@ def movej(__socket):
                                                             v_joint,
                                                             t,
                                                             radius)+'\n'
-    __socket.send(message)
+    __socket.send(message) # 只有python2.x可以这么用，python3.x需要改一下
     T.sleep(2.5) # 每次命令发送后需要等待移动
 
 def read_data():
